@@ -1,0 +1,91 @@
+#header-top {
+    height: 350px;
+    background-image: url(img/triangles.png);
+    margin: 0px;
+}
+
+#navigator {
+    background-image: url(img/texture.png);
+    height: 80px;
+    position: relative;
+    top: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+#navigator a {
+    text-decoration: none;
+    padding: 0px 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#navigator a:hover {
+    cursor: pointer;
+    color: #d60429;
+    outline: 1px solid #f3e3b9;
+}
+
+#navigator span {
+    position: relative;
+    top: 36%;
+}
+.area:after {
+    background: rgba(0, 0, 0, 0) url(img/folio2.png) no-repeat scroll center center;
+
+    content: "";
+    height: 40px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: auto;
+    width: 80px;
+    z-index: 1;
+}
+.area:after img {
+    background-image: url(img/triangles.png);
+
+}
+#gallery-wrap {
+    background-image: url("img/texturegallery.png");
+    height: 550px;
+}
+
+#container_main {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+            "domain1 domain2 domain3"
+     "square1 square2 square3";
+    grid-column-gap: 20px;
+    grid-row-gap: 15px;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+}
+#container_main img {
+    width: 80%;
+    height: 80%;
+}
+#container_main img:hover {
+    cursor: pointer;
+    color: rgba(214, 23, 32, 0.9);
+    outline: 1px solid #d6182d;
+}
+.first-photo {
+    grid-area: domain1;
+}
+.second-photo {
+    grid-area: domain2;
+}
+.third-photo {
+    grid-area: domain3;
+}
+.fourth-photo {
+    grid-area: square2;
+}
+
+

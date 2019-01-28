@@ -1,0 +1,126 @@
+
+
+.main_container {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+}
+#foto_liliya img {
+    height: 600px;
+}
+
+.text_fact {
+    font-size: 50px;
+    font-style: oblique;
+    text-align: center;
+    color: #ff2f2f;
+    position: relative;
+    top: 50px;
+}
+.sub_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(img/akvarel.jpg);
+    /*background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #80C5E8), color-stop(50, #D278FF), color-stop(100, #D0C7FF));*/
+    height: 600px;
+
+}
+.facts{
+    padding-top: 80px;
+    margin: 20px;
+    text-align: justify;
+
+}
+ul {
+    list-style-image: url(img/checked.png);
+}
+.copyright{
+    background-image: url(img/breadBg.jpg);
+    /*background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #6DD4E8), color-stop(50, #344FD8), color-stop(51, #1E6ECA), color-stop(100, #7db9e8));*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+}
+.copyright div img {
+    height: 70px;
+    padding: 1px;
+}
+.social_button:hover {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #E84D4D), color-stop(50, #FFA58F), color-stop(100, #E84D4D));
+    border: 2px solid #ff2e11;
+}
+.social_button_fb:hover{
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #2A63E8), color-stop(50, #C7C7FF), color-stop(100, #2A63E8));
+    border: 2px solid #1e78ff;
+}
+
+#foto_vlada img {
+    height: 600px;
+}
+#foto_natalya img {
+    height: 600px;
+}
+#foto_alex img {
+    height: 600px;
+}
+.six {
+    background: none;
+    padding: 50px 20px;
+    text-align: center;
+    margin: 60px;
+}
+.six h1 {
+    font-weight: normal;
+    font-family: 'Merriweather', serif;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    line-height: 1;
+    color: #fdfffc;
+    font-size: 40px;
+    padding: .4em 1em .55em;
+}
+.six h1:before,
+.six h1:after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: .1em;
+    background: #d0493a;
+}
+.six h1:before {
+    left: 0;
+    top: 0;
+}
+.six h1:after {
+    right: 0;
+    bottom: 0;
+}
+.six h1 span:before,
+.six h1 span:after {
+    content: "";
+    position: absolute;
+    width: .65em;
+    height: .65em;
+    border: .1em solid #d0493a;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.six h1 span:before {
+    top: -.55em;
+    left: -.325em;
+}
+.six h1 span:after {
+    bottom: -.55em;
+    right: -.325em;
+}
+@media (max-width: 600px) {
+    .six h1 {font-size: 2em;}
+}
+@media (max-width: 450px) {
+    .six h1 {font-size: 1.5em;}
+}
